@@ -1,29 +1,25 @@
-import { useLoaderData } from 'react-router-dom'
-import { useEffect } from 'react'
-import Item from '../components/Item'
+import { useLoaderData } from 'react-router-dom';
+import { useEffect } from 'react';
+import Item from '../components/Item';
 
 function ItemPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-  useEffect(()=>{
-    window.scrollTo(0,0)
-  },[])
+  const products = useLoaderData();
 
-  const products = useLoaderData()
-  
   return (
-     <>
-
-        <Item products={products}/>
-
-     </>
-)
-
-};
-
-const itemLoader = async ({params}) => {
-  const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/products/${params.id}`)
-  const data = await res.json()
-  return data
+    <>
+      <Item products={products} />
+    </>
+  );
 }
 
-export {ItemPage as default , itemLoader};
+const itemLoader = async ({ params }) => {
+  const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/products/${params.id}`);
+  const data = await res.json();
+  return data;
+};
+
+export { ItemPage as default, itemLoader };

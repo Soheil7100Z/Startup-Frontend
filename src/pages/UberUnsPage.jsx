@@ -1,13 +1,11 @@
-import UberUns from "../components/UberUns"
+import UberUns from '../components/UberUns';
 
 function UberUnsPage() {
   return (
     <>
-
-        <UberUns/>
-
+      <UberUns />
     </>
-)
+  );
 }
 
-export default UberUnsPage
+export default UberUnsPage;

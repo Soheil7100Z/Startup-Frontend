@@ -1,13 +1,11 @@
-import Introduction from "../components/Introduction"
+import Introduction from '../components/Introduction';
 
 const HomePage = () => {
   return (
     <>
-
-        <Introduction/>
-
+      <Introduction />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

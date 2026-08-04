@@ -1,13 +1,11 @@
-import Contact from "../components/Contact"
+import Contact from '../components/Contact';
 
 function ContactPage() {
   return (
-   <>
-
-        <Contact/>
-
-   </>
-  )
+    <>
+      <Contact />
+    </>
+  );
 }
 
-export default ContactPage
+export default ContactPage;
