@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { FaWhatsappSquare, FaInstagramSquare, FaFacebookSquare } from 'react-icons/fa';
 import { useEffect } from 'react';
 
-function UberUns() {
+function AboutUsPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -51,4 +51,4 @@ function UberUns() {
   );
 }
 
-export default UberUns;
+export default AboutUsPage;
